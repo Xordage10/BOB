@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM!</title>
+    <link rel="stylesheet" href="BOM.css">
+</head>
+<body>
+    <header>
+        <h2>BOM!</h2>
+        <nav>
+            <div> 
+                 <a href="#"> <img src="/images/Geedi.png" alt=""> </a>
+                 <p>Gaariga Geediga</p>
+            
+            </div>
+
+            <div>
+                 <a href="#"> <img src="/images/guri-removebg-preview.png" alt=""></a>
+                 <p>Guri Kireyn</p>
+                </div>
+
+                <div>
+                    <a href="#">  <img src="/images/mobil.png" alt=""></a>
+                    <p>Mobil iibin</p>
+                </div>
+
+                <div>
+                    <a href="#">  <img src="/images/gari_22-removebg-preview.png" alt=""> </a>
+                    <p>Gaari iibin</p>
+                </div>
+
+                
+
+                
+        </nav>
+        
+        <img class="menue" src="/images/hamburger-menu.svg" alt="">
+
+        <img class="close" src="/images/close-removebg-preview.png" alt="">
+        
+    
+    </header>
+     
+
+    <script>
+
+       const menueBtn = document.querySelector('.menue');
+       const closBtn = document.querySelector ('.close');
+       const navv = document.querySelector ('nav');
+       menueBtn.addEventListener('click',()=>{
+        navv.classList.add('nav1')
+        menueBtn.classList.add('menue1')
+        closBtn.classList.add('close1');
+
+       });
+
+       closBtn.addEventListener('click',()=>{
+        navv.classList.remove('nav1')
+        menueBtn.classList.remove('menue1')
+        closBtn.classList.remove('close1');
+
+       });
+       
+        
+
+    </script>
+    
+</body>
+</html>
